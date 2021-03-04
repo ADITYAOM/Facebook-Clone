@@ -93,7 +93,7 @@ public class SignUp extends AppCompatActivity {
                         Log.d(TAG, "New user registration: " + task.isSuccessful());
 
                         if (!task.isSuccessful()) {
-                            SignUp.this.showToast("Authentication failed. " + task.getException());
+                            SignUp.this.showToast("Authentication failed. " + task.getException().getMessage());
                         } else {
                             SignUp.this.startActivity(new Intent(SignUp.this, Home.class));
                             SignUp.this.finish();
