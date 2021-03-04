@@ -2,6 +2,8 @@ package com.aditya.facebookui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
@@ -12,9 +14,13 @@ import android.view.MenuItem;
 import android.widget.Toolbar;
 
 import com.aditya.facebookui.Adapters.PageAdapter;
+import com.aditya.facebookui.Adapters.RecyclerAdapter;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Home extends AppCompatActivity {
 
@@ -24,6 +30,7 @@ public class Home extends AppCompatActivity {
     private androidx.appcompat.widget.Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
+    private RecyclerView mRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +68,26 @@ public class Home extends AppCompatActivity {
             }
         };
 
+//        List<String> list = new ArrayList<String>();
+//        list.add("1");
+//        list.add("2");
+//        list.add("3");
+//        list.add("4");
+//        list.add("5");
+//        list.add("6");
+//        list.add("7");
+//        list.add("8");
+//        list.add("9");
+
+
+//        //Setting Layout Manager to the Recycler View
+//        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(Home.this);
+//        mRecyclerView.setLayoutManager(layoutManager);
+//
+//        // Attaching adapter
+//        RecyclerAdapter recyclerAdapter = new RecyclerAdapter(list);
+//        mRecyclerView.setAdapter(recyclerAdapter);
 
 
     }
