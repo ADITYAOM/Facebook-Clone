@@ -37,13 +37,14 @@ public class SignUp extends AppCompatActivity {
         mPassword= (EditText) findViewById(R.id.editTextTextPassword);
         mPasswordConf = (EditText) findViewById(R.id.editTextTextPasswordConnfirmation);
         mSignUp = (Button) findViewById(R.id.button2);
+        mLogIn = (Button) findViewById(R.id.button3);
 
         mAuth = FirebaseAuth.getInstance();
 
         mLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(SignUp.this, MainActivity.class));
+                SignUp.this.startActivity(new Intent(SignUp.this, MainActivity.class));
                 SignUp.this.finish();
             }
         });

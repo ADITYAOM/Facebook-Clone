@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
+    <Button
+        android:id="@+id/signOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_out"
+        tools:layout_editor_absoluteX="304dp"
+        tools:layout_editor_absoluteY="17dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
