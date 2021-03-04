@@ -2,6 +2,7 @@ package com.aditya.facebookui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mLogInButton;
     private FirebaseAuth mAuth;
     private TextView mSignUp;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
