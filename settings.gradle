@@ -1,0 +1,2 @@
+rootProject.name = "FacebookUI"
+include ':app'
